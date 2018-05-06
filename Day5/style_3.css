@@ -1,0 +1,17 @@
+#warp{
+    margin: 50px auto;
+    border: 1px dashed darkgray;
+    width: 700px;
+    height: 1000px;
+    padding: 40px;
+}
+h1{
+    font-size: 40px;
+}
+span{
+    font-weight: bold;
+    margin-right: 30px;
+}
+p.Title{
+    font-weight: bold;
+}

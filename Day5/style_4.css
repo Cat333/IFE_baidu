@@ -1,0 +1,35 @@
+#warp{
+    margin: 50px auto;
+    border: 1px dashed darkgray;
+    width: 1000px;
+    height: 1100px;
+    padding: 10px;
+    overflow: hidden;
+}
+h1{
+    font-size: 40px;
+}
+span{
+    font-weight: bold;
+    margin-right: 30px;
+}
+p.Title{
+    font-weight: bold;
+}
+#div1{
+    width: 200px;
+    /*height: 1000px;*/
+    background: cadetblue;
+    float: left;
+    opacity: 0.8;
+    margin-bottom: -10000px;
+    padding-bottom: 10000px;
+    text-align: center;
+}
+#div2{
+    float: right;
+    /*background: palegreen;*/
+    margin-bottom: -1000px;
+    padding-bottom: 1000px;
+    /*float: left;*/
+}

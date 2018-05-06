@@ -1,0 +1,52 @@
+#warp{
+    margin: 50px auto;
+    /*border: 1px dashed darkgray;*/
+    width: 1000px;
+    height: 1000px;
+    padding: 40px;
+}
+h1{
+    font-size: 40px;
+}
+span{
+    font-weight: bold;
+    margin-right: 30px;
+}
+p.Title{
+    font-weight: bold;
+}
+#div1{
+    height: 80px;
+    padding-left: 20px;
+    line-height: 80px;
+    background: #ccc;
+}
+.ppp{
+    overflow: hidden;
+    height: 164px;
+}
+.partition{
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+    background: #f1f1f1;
+    padding-left: 20px;
+    height: 100%;
+    padding-top: 5px;
+}
+h2{
+    margin: 0;
+    width: 120px;
+    height: 100%;
+    background: palegoldenrod;
+    line-height: 164px;
+    padding-left: 20px;
+    float: left;
+    /*border-bottom-style: solid;*/
+    /*border-bottom-color: #ffffff;*/
+    /*border-bottom-width: 30px;*/
+    border: 1px solid white;
+    border-right: 0;
+    /*border-top: 0;*/
+}

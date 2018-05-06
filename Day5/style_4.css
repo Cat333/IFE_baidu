@@ -2,7 +2,7 @@
     margin: 50px auto;
     border: 1px dashed darkgray;
     width: 800px;
-    height: 800px;
+    height: 850px;
     padding: 10px;
     overflow: hidden;
 }
@@ -27,7 +27,7 @@ p.Title{
     text-align: center;
 }
 #div2{
-    /*background: palegreen;*/
+
     margin-bottom: -1000px;
     padding-bottom: 1000px;
     padding-left: 20px;

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body, ul, li{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            display: inline-block;
+        }
+        a{
+            text-decoration: none;
+        }
+        header{
+            height: 70px;
+            background: #000;
+            opacity: 0.7;
+        }
+        #head{
+            width: 960px;
+            margin: 0 auto;
+            color: #ffffff;
+            position: relative;
+            top: 10px;
+        }
+        #head>a:link{
+            border-bottom: 1px solid
+            /*text-decoration: underline;*/
+            color: #ccc;
+        }
+        #head>ul{
+            float: right;
+            margin-left: 10px;
+        }
+        #head>span{
+            font-size: 20px;
+        }
+        #banner{
+            height: 220px;
+            background: yellowgreen;
+        }
+        #banner ul{
+            position: relative;
+            top: 180px;
+            left: 900px;
+        }
+        #banner li{
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 20px;
+            background: #ffffff;
+            opacity: 0.5;
+        }
+        #banner .selected{
+            padding-top: 10px;
+            background: #fff;
+            opacity: 0.8;
+        }
+
+        nav{
+            height: 60px;
+            border-bottom: 1px solid #ccc;
+        }
+        #main{
+            width: 960px;
+            margin: 0 auto;
+            position: relative;
+            top: 10px;
+        }
+        #main li{
+            border: 1px solid #ccc;
+            /*border-bottom: 0;*/
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 80px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            background: #f1f1f1;
+            color: black;
+            margin: 0;
+        }
+        #content{
+            width: 960px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        #content ul{
+            display: flex;
+        }
+        #content li{
+            border: 1px solid #f1f1f1;
+            padding: 80px;
+            margin: 10px 10px 0 0 ;
+            flex: 1;
+            text-align: center;
+        }
+
+        footer{
+            height: 75px;
+            background: #888;
+            color: #fff;
+            text-align: center;
+            padding-top: 20px;
+        }
+        #main .ss{
+            background: #ffffff;
+            border-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="head">
+            <span>Logo</span>
+            <ul>
+                <li><a href="https://github.com/Cat333">GitHub</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="banner">
+            <ul>
+                <li><a href="#"></a>1</li>
+                <li class="selected"><a href="#"></a>2</li>
+                <li><a href="#"></a>3</li>
+                <li><a href="#"></a>4</li>
+            </ul>
+
+    </div>
+    <nav>
+        <div id="main">
+            <ul>
+                <li class="ss"><a href="#">HOME</a></li>
+                <li><a href="#">PROFILE</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <div id="content">
+        <div id="div1">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+        <div id="div2">
+            <ul>
+                <li>content1</li>
+                <li>content2</li>
+                <li>content2</li>
+                <li>content2</li>
+            </ul>
+        </div>
+        <div id="div3">
+            <ul>
+                <li>try1</li>
+                <li>try2</li>
+                <li>try3</li>
+            </ul>
+        </div>
+    </div>
+    <footer>@2018 ife.baidu.com</footer>
+</body>
+</html>

@@ -12,9 +12,49 @@
 
     function dec2bin(decNumber) {
         // 在这里实现你的转化方法，注意需要判断输入必须为一个非负整数
+        var res1 = [];
+        var res2 = [];
+        if(decNumber < 0){
+            return;
+        }else if(decNumber >= 1){
+            while(decNumber){
+                var quotient = Math.floor(decNumber / 2);
+                var temp = decNumber % 2;
+                console.log(temp);
+                decNumber = quotient;
+                res1.push(temp);
+            }
+            for(var i = res1.length-1 ;i>=0; i--){
+                res2.push(res1[i]);
+            }
+            return res2.join('');
+        }else{
+            res1.push('0.');
+            while(decNumber){
+                var tem = Math.floor(decNumber * 2);
+                var Product = decNumber * 2 -tem;
+                decNumber = Product;
+                res1.push(tem);
+            }
+            return res1.join('');
+        }
+
+
     }
 
-    // 实现党点击转化按钮时，将输入的十进制数字转化为二进制，并显示在result的p标签内
+
+
+
+    var num = document.getElementById('dec-number');
+    var btn = document.getElementById('trans-btn');
+    var P = document.getElementById('result');
+    btn.addEventListener('click',function(){
+        var newRes = document.createElement('p');
+        newRes.innerText = dec2bin(num.value) ;
+        P.appendChild(newRes);
+    });
+
+    // 实现当点击转化按钮时，将输入的十进制数字转化为二进制，并显示在result的p标签内
     // Some coding
 
 </script>

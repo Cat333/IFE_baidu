@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var a = 10;
+    function count(a){
+        console.log(a);
+        a = 20;
+        console.log(a);
+    }
+    /*
+    *函数内相当于将全局变量a带入到函数中之后，里面的a就与全局的无关
+    * var a;
+    * console.log(a);
+    * a = 20;
+    * */
+    count(a);
+    console.log(a);
+</script>
+</body>
+</html>

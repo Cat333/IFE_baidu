@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width: 100px;
+            height: 60px;
+            background: pink;
+            box-shadow: 10px 0 1px #ccc ;
+        }
+    </style>
+</head>
+<body>
+<div>hhh</div>
+<input id="che" type="checkbox" />xuanz
+<script>
+    var a = {n:4};
+    var b = a;
+    b.x = a = {n: 10};
+    console.log(a.x);//undefined
+    console.log(b.x);//{n:10}
+    console.log(b);//{n:10}
+    b.n = 5;
+    console.log(a.n)
+    var b = document.getElementById('che');
+//    b.setAttribute('selected',true);
+    b.checked = true;
+</script>
+</body>
+</html>

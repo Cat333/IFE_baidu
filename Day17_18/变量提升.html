@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    /*
+    * Declared variables are constrained in the execution context in which they are declared.
+    * Undeclared variables are always global.
+    * z在全局中不存在，的也就是没有声明的话，输出时抛出错误，但是如果输出z的类型，就是undefined。另外，如果定义了没有初始化，输出也是undefine
+    * */
+    function test(){
+        y = 1;
+        var z = 3;
+    }
+    test();
+    console.log(y);
+    console.log("z’s type is:"+typeof(z));
+    console.log("z is:"+z);
+    /*
+    *Declared variables are created before any code is executed
+    *
+    * */
+    console.log("hh is:"+hh);
+    console.log(y);
+    var hh;
+
+    var a = 1;
+    b = 2;
+
+    delete this.a; // Throws a TypeError in strict mode. Fails silently otherwise.
+    delete this.b;
+
+//    console.log(a, b); // Throws a ReferenceError.
+    // The 'b' property was deleted and no longer exists.
+
+
+    bla = 2;
+    var bla;
+    // is implicitly understood as:
+    var bla;
+    bla = 2;
+
+
+    function do_something() {
+        console.log(bar); // undefined
+        var bar = 111;
+        console.log(bar); // 111
+    }
+
+    // is implicitly understood as:
+    function do_something() {
+        var bar;
+        console.log(bar); // undefined
+        bar = 111;
+        console.log(bar); // 111
+    }
+
+    function q(){
+        var bla = aaa = 1;
+        console.log(bla,aaa);
+    }
+    q();
+    console.log("zheshihsa"+bla,aaa)
+</script>
+
+
+</body>
+</html>

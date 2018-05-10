@@ -6,11 +6,12 @@
 </head>
 <body>
 <input id="dec-number" type="number" placeholder="输入一个十进制非负整数">
+<input id="bin-bit" type="number" placeholder="输入转化后二进制数字位数">
 <button id="trans-btn">转化为二进制</button>
 <p id="result">运算结果</p>
 <script>
 
-    function dec2bin(decNumber) {
+    function dec2bin(decNumber,bit) {
         // 在这里实现你的转化方法，注意需要判断输入必须为一个非负整数
         var res1 = [];
         var res2 = [];
@@ -23,6 +24,12 @@
                 console.log(temp);
                 decNumber = quotient;
                 res1.push(temp);
+            }
+            if(res1.length < bit){
+                while(bit-res1.length){
+                    res1.push('0')
+                }
+
             }
             for(var i = res1.length-1 ;i>=0; i--){
                 res2.push(res1[i]);
@@ -44,13 +51,13 @@
 
 
 
-
+    var bit = document.getElementById('bin-bit');
     var num = document.getElementById('dec-number');
     var btn = document.getElementById('trans-btn');
     var P = document.getElementById('result');
     btn.addEventListener('click',function(){
         var newRes = document.createElement('p');
-        newRes.innerText = dec2bin(num.value) ;
+        newRes.innerText = dec2bin(num.value,bit.value) ;
         P.appendChild(newRes);
     });
 

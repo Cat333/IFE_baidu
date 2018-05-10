@@ -195,6 +195,18 @@
     <button>点我点我点我...</button>
     <p id="add"></p>
     <script>
+        var d = new Date();
+        if(d.getHours()>0 && d.getHours()<12){
+            alert('Hello,客官上午好！')
+        }else if(d.getHours()>12 && d.getHours()<14){
+            alert('Hello,客官中午好！')
+        } else if(d.getHours()>14 && d.getHours()<18){
+            alert('Hello,客官下午好！')
+        }else{
+            alert('Hello,客官晚上好！')
+        }
+        document.write();
+
         var P = document.querySelector('#add');
         document.querySelector('button').onclick = function (){
             P.innerHTML = "全幼稚园最可爱！";
